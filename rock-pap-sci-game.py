@@ -17,8 +17,13 @@ while player_choice not in choices:
     
 computer_choice = choices[random.randint(0,2)]
 
-print(computer_choice)
+if player_choice == 'ROCK':
+    if computer_choice.upper() == 'SCISSORS':
+        print('You win!')
+    else:
+        print('You lose')
+else:
+    print('still calculating')
 
 # Print result
-print(player_choice)
 
