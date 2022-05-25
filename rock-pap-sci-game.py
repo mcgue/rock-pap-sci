@@ -15,9 +15,12 @@ while player_choice not in choices:
     player_choice = input('Please enter ROCK, PAPER, or SCISSORS:')
     player_choice = player_choice.upper()
     
-computer_choice = choices[random.randint(0,2)]
+computer_choice = 'ROCK' #choices[random.randint(0,2)]
 
-if player_choice == 'ROCK':
+if player_choice == computer_choice:
+    print('It is a tie!')
+
+elif player_choice == 'ROCK':
     if computer_choice.upper() == 'SCISSORS':
         print('You win!')
     else:
