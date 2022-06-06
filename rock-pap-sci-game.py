@@ -33,8 +33,6 @@ elif player_choice == 'PAPER':
 else:
     print('still calculating')
 
-print('test')
-
 # Print result
 print('I picked ' + computer_choice + '!')
 
