@@ -32,22 +32,22 @@ while True:
 if player_choice != computer_choice:
     if player_choice == 'ROCK':
         if computer_choice.upper() == 'SCISSORS':
-            print('You win!')
+            print('You win :(')
         else:
-             print('You lose')
+             print('You lose, haha')
     elif player_choice == 'PAPER':
         if computer_choice.upper() == 'ROCK':
-            print('You win!')
+            print('You win, unfortunately')
         else:
-            print('You lose')
+            print('Ha, you lose')
     elif player_choice == 'SCISSORS':
         if computer_choice.upper() == 'PAPER':
-            print('You win!')
+            print('You win.')
         else:
-            print('You lose')
+            print('You lose!')
     else:
         print('still calculating')
 
     # Print result
-    print('I picked ' + computer_choice + '!')
+    print('I picked ' + computer_choice)
 print('Thanks for playing!')
