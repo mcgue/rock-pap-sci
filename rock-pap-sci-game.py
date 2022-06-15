@@ -1,13 +1,21 @@
+# Rock, Paper, Scissors game without fancy external game libraries
+
+# Import random module
 import random
 
-# List of acceptable choices
+# Establish list of acceptable choices
 choices = ['ROCK', 'PAPER', 'SCISSORS']
 
-# Introduce game and get input
-print('Let\'s play Rock, Paper, Scissors :)')
+# Introduce game
+print('Let\'s play Rock, Paper, Scissors.')
+
+# Ask whether instructions understood
+print('Rock beats scissors, scissors beat paper, and paper beats rock.')
+print('Let\'s go!')
 
 # While loop to restart when get tie
 while True:
+    # Get user input
     player_choice = input('Please enter your choice: ')
 
     # Move to all uppercase
