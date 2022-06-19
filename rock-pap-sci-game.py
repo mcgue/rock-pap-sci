@@ -9,8 +9,17 @@ choices = ['ROCK', 'PAPER', 'SCISSORS']
 # Introduce game
 print('Let\'s play Rock, Paper, Scissors.')
 
-# Ask whether instructions understood
-print('Rock beats scissors, scissors beat paper, and paper beats rock.')
+# Check whether instructions understood
+while True:
+    # Ask whether understand the game
+    player_understands = input('Do you know how to play? Enter Y for Yes or N for No: ')
+    # Break if do
+    if player_understands.upper() == 'Y':
+        break
+    # Provide instructions
+    print('Rock beats scissors, scissors beat paper, and paper beats rock.')
+
+# Commence game statement
 print('Let\'s go!')
 
 # While loop to restart when get tie
