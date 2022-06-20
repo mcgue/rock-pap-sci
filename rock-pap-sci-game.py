@@ -30,22 +30,28 @@ while True:
     # Move to all uppercase
     player_choice = player_choice.upper()
 
-    # Check guess for validity
+    # Make sure user has input valid choice
     while player_choice not in choices:
         player_choice = input('Please enter ROCK, PAPER, or SCISSORS:')
         player_choice = player_choice.upper()
-    
+
+    # Generate computer choice
     computer_choice = choices[random.randint(0, 2)]
 
+    # if no tie, leave this while loop
     if player_choice != computer_choice:
         break
 
+    # Inform there is a tie and ask whether player wants to try again
     if player_choice == computer_choice:
         print('It is a tie!')
     player_answer = input('Try again? Enter Y or N ')
-    if player_answer.upper() == 'N' or player_choice != computer_choice:
+
+    # Break if player wants to stop
+    if player_answer.upper() == 'N':
         break
 
+# If no tie, determine winner
 if player_choice != computer_choice:
     if player_choice == 'ROCK':
         if computer_choice.upper() == 'SCISSORS':
@@ -67,4 +73,6 @@ if player_choice != computer_choice:
 
     # Print result
     print('I picked ' + computer_choice)
+
+# Sign off to end game
 print('Thanks for playing!')
