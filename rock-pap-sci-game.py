@@ -25,15 +25,11 @@ print('Let\'s go!')
 # While loop to restart if player wants to play again
 while True:
     # Get user input
-    player_choice = input('Please enter your choice: ')
-
-    # Move to all uppercase
-    player_choice = player_choice.upper()
+    player_choice = (input('Please enter your choice: ')).upper()
 
     # Make sure user has input valid choice
     while player_choice not in choices:
-        player_choice = input('Please enter ROCK, PAPER, or SCISSORS:')
-        player_choice = player_choice.upper()
+        player_choice = (input('Please enter ROCK, PAPER, or SCISSORS:')).upper()
 
     # Generate computer choice
     computer_choice = choices[random.randint(0, 2)]
@@ -66,10 +62,10 @@ while True:
         # Print result
         print('I picked ' + computer_choice.lower())
 
-
+    # Ask player to play again
     player_answer = input('Play again? Enter Y or N ')
 
-    # Break if player wants to stop
+    # Break if player enters anything but a 'y'
     if player_answer.upper() != 'Y':
         break
 
