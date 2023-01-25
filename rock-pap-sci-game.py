@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors game without fancy external game libraries
+# Rock, Paper, Scissors game
 
 # Import random module
 import random
