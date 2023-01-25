@@ -1,2 +1,3 @@
-# rock-pap-sci
- 
+# rock-pap-sci<br>
+Rock, Paper, Scissors game.<br>
+Finished.
