@@ -1,3 +1,3 @@
-# rock-pap-sci<br>
+# rock-pap-sci
 Rock, Paper, Scissors game.<br>
-Status: complete, but redo with game module?
+Status: finished, but redo with game module or other?
